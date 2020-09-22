@@ -222,3 +222,8 @@ variable "ebs_block_devices" {
   # ]
 }
 
+variable "iam_permissions_boundary" {
+  description = "If set, restricts the created IAM role to the given permissions boundary"
+  type        = string
+  default     = null
+}
